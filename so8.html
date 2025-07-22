@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #222;
+            min-height: 100vh;
+            overflow: auto;
+        }
+        img {
+            width: 100%;
+            min-height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+        
+
+        @media (max-width: 767.98px) {
+            img {
+                width: 135%;
+                min-height: 100vh;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://hmtuan002.github.io/G11/8.png" alt="Displayed Image">
+</body>
+</html>
